@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Мое портфолио</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Добро пожаловать в мое портфолио!</h1>
+    </header>
+
+    <section id="animation">
+        <h2>Анимация</h2>
+        <div class="box">Hover over me!</div>
+    </section>
+
+<section id="interactive-elements">
+    <h2>Интерактивные элементы</h2>
+    <button onclick="alert('Привет!')">Нажми на меня</button>
+    <input type="checkbox" id="toggle" hidden>
+    <label for="toggle">Переключить</label>
+    <div id="toggle-content">Содержимое переключателя</div>
+    <select>
+        <option value="option1">Опция 1</option>
+        <option value="option2">Опция 2</option>
+        <option value="option3">Опция 3</option>
+    </select>
+</section>
+
+    <section id="media-content">
+        <h2>Видео и аудио контент</h2>
+        <video controls>
+            <source src="sample.mp4" type="video/mp4">
+            Ваш браузер не поддерживает видео.
+        </video>
+        <audio controls>
+            <source src="audio.mp3" type="audio/mpeg">
+            Ваш браузер не поддерживает аудио.
+        </audio>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Мое портфолио</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

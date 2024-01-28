@@ -1,0 +1,41 @@
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+header, footer {
+    text-align: center;
+    padding: 1em;
+    background-color: #333;
+    color: white;
+}
+
+.box {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    transition: transform 0.5s;
+}
+
+.box:hover {
+    transform: scale(1.5);
+}
+
+#toggle-content {
+    display: none;
+}
+
+#toggle:checked ~ #toggle-content {
+    display: block;
+}
+
+/* Псевдоэлементы и псевдоклассы */
+h1::after {
+    content: 'Приветствие';
+    display: block;
+    color: grey;
+}
+
+button:hover {
+    background-color: yellow;
+}
